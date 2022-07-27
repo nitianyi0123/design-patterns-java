@@ -1,2 +1,2 @@
-# design-patterns-demo
-与spring结合的设计模式代码片段
+# design-patterns-java
+设计模式总结
