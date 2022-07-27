@@ -1,8 +1,6 @@
 package com.tj.designpatterns.chofresb;
 
-import com.tj.designpatterns.chofresb.model.HandlerRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.tj.designpatterns.chofresb.model.Article;
 
 /**
  * @author nitianyi
@@ -10,32 +8,23 @@ import org.slf4j.LoggerFactory;
  */
 public abstract class AbstractHandler {
 
-    private static final Logger log = LoggerFactory.getLogger(AbstractHandler.class);
-
     private AbstractHandler next;
-
-    public AbstractHandler getNext() {
-        return next;
-    }
 
     public void setNext(AbstractHandler next) {
         this.next = next;
     }
 
-    public void handleRequest(HandlerRequest request) {
-        if (isHit(request)) {
-            this.handle(request);
-            return;
+    public void handle(Article article) {
+        if (condition(article)) {
+            this.doHandle(article);
         }
         if (this.next != null) {
-            this.next.handleRequest(request);
-        } else {
-            log.warn("no handler execute, request: {}", request);
+            this.next.handle(article);
         }
     }
 
-    protected abstract boolean isHit(HandlerRequest request);
+    protected abstract boolean condition(Article article);
 
-    protected abstract void handle(HandlerRequest request);
+    protected abstract void doHandle(Article article);
 
 }
