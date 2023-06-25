@@ -1,7 +1,7 @@
-package com.tj.designpatterns.chofresb;
+package com.tj.designpatterns.cor;
 
-import com.tj.designpatterns.chofresb.model.Article;
-import com.tj.designpatterns.chofresb.model.Subject;
+import com.tj.designpatterns.cor.model.Article;
+import com.tj.designpatterns.cor.model.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;

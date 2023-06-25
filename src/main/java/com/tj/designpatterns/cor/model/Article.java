@@ -1,4 +1,4 @@
-package com.tj.designpatterns.chofresb.model;
+package com.tj.designpatterns.cor.model;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.tj.designpatterns.chofresb;
+package com.tj.designpatterns.cor;
 
-import com.tj.designpatterns.chofresb.model.Article;
-import com.tj.designpatterns.chofresb.model.Subject;
+import com.tj.designpatterns.cor.model.Article;
+import com.tj.designpatterns.cor.model.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

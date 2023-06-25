@@ -1,4 +1,4 @@
-package com.tj.designpatterns.chofresb;
+package com.tj.designpatterns.cor;
 
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
